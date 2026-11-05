@@ -1,11 +1,12 @@
 {
     "name": "Lot Expiry Worklist",
     "summary": "Assign and acknowledge expiring stock by lot, location and owner",
-    "version": "19.0.1.0.0",
+    "version": "19.0.1.0.1",
     "category": "Inventory/Inventory",
-    "author": "Cyfr Sp. z o.o.",
+    "author": "Digicyfr (CYFR Sp. z o.o.)",
     "website": "https://www.digicyfr.com",
     "license": "LGPL-3",
+    "images": ["static/description/main_screenshot.png"],
     "depends": ["product_expiry"],
     "data": [
         "security/ir.model.access.csv",

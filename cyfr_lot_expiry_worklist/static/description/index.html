@@ -1,15 +1,26 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head><meta charset="utf-8"><title>Lot Expiry Worklist</title></head>
+<head>
+  <meta charset="utf-8">
+  <title>Lot Expiry Worklist for Odoo 19</title>
+</head>
 <body>
-<h1>Lot Expiry Worklist</h1>
-<p>Assign and acknowledge expiring stock by lot, exact internal location and stock owner in Odoo 19.</p>
-<ul>
-<li>Bounded, on-demand scan of physical stock and native lot expiration dates.</li>
-<li>Separate rows for locations and consigned owners, with on-hand, reserved and physical unreserved quantities.</li>
-<li>Manager assignment, responsible-user acknowledgment and an action history that remains after stock leaves.</li>
-<li>Direct links to native Odoo lot and quant screens. No stock or expiry-date changes.</li>
-</ul>
-<p>License: LGPL-3. Dependency: <code>product_expiry</code>. See README.md and SECURITY.md for limits.</p>
+  <section class="container">
+    <h1>Lot Expiry Worklist</h1>
+    <p class="lead">Assign and acknowledge an action for expiring lot stock at each exact internal location and stock owner.</p>
+    <p>Free, open-source Odoo 19 addon (LGPL-3). Requires the standard <code>product_expiry</code> module.</p>
+    <h2>What it does</h2>
+    <ul>
+      <li>Scan positive internal stock by company, exact lot, location and owner within a chosen expiry horizon.</li>
+      <li>See on-hand and physical unreserved quantity, native expiry dates and stock-present status in a bounded snapshot.</li>
+      <li>Assign a responsible Inventory user, record an action and note, and keep acknowledgment history after stock leaves.</li>
+      <li>Open native Odoo lot and quant records; use English and Polish screens, guides and demo data.</li>
+    </ul>
+    <h2>See it in Odoo</h2>
+    <p>Open Inventory → Lot Expiry → Scan, then review the Worklist for the selected location.</p>
+    <img class="img-fluid" src="main_screenshot.png" width="1440" height="900" alt="Odoo 19 lot expiry worklist with three positions separated by shelf and owner, quantity, assignee and acknowledgment">
+    <h2>Compatibility and scope</h2>
+    <p>Tested on Odoo 19 Community. Scans are snapshots capped at 5,000 lot quants and 1,000 positions; rerun after stock or expiry-date changes. The module does not move, reserve or scrap stock. Enterprise compatibility and large-shop performance remain unverified.</p>
+  </section>
 </body>
 </html>
